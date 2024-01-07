@@ -1,0 +1,50 @@
+/* 상품 카드 */
+.product-box {
+  padding-top: 40px;
+  padding: 50px 50px;
+}
+
+.product-box .item {
+  margin-top: 0px;
+}
+
+.product-box .item {
+  padding-top: 30px;
+  display: block;
+  overflow-x: hidden;
+  margin: 0 -17.5px;
+  margin-bottom: -57px;
+  font-size: 0;
+}
+
+.product-box .item li {
+  display: inline-block;
+  padding-left: 2px;
+  width: 350px;
+  vertical-align: top;
+  letter-spacing: 0;
+  zoom: 1;
+  font-size: 13px;
+  margin: 0 16px;
+  margin-bottom: 57px;
+  outline: none;
+  padding: 10px;
+  border: 2px solid #d9ce94;
+  align-items: center;
+}
+
+.product-box .item-image {
+  padding-bottom: 253px;
+  border-radius: 10px;
+  display: block;
+  max-width: 350px;
+  max-height: 350px;
+  position: relative;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
