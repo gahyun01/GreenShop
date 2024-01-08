@@ -31,8 +31,8 @@ export default function Card() {
                 [MADE/기장별,뱃살커버]인생핏 트레이닝 롱일자 밴딩팬츠 숏/기본/롱</a>
 
             </div>
-            <div className="flex justify-center float-right mt-0">
-              <span className="text-red-500 pl-2 text-lg font-bold">46<em>%</em></span> <span className="pl-2 text-lg font-bold">15,900</span>
+            <div className="flex justify-center float-right mt-0 items-end">
+              <span style={{color: '#ff5252'}} className="pl-2 font-bold mb-1">46%</span> <span className="pl-2 text-lg font-bold">15,900</span>
             </div>
           </div>
         </li>

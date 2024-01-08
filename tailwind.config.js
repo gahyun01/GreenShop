@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     extend: {},
-    colors: { mustardYellow: '#d9ce94', TGreen: '#305440', mustardGray: '#8f8658' },
+    colors: { mustardYellow: '#d9ce94', TGreen: '#305440', mustardGray: '#8f8658', MainYellow:'fffbe0' },
   },
   plugins: [],
 }

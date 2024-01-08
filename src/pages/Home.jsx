@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Banner from '../components/banner';
+import Header from '../components/header';
 import Card from '../components/card';
 
 export default function Home() {
   return (
-    <div className="flex justify-center items-center font-bold text-lg">
-      <Banner />
+    <div className="w-screen h-screen flex flex-col justify-center items-center">
+      <Header />
       <Card />
     </div>
   );
