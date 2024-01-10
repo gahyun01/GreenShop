@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import Header from '../components/header';
-import '../css/bootstrap.css';
-import '../css/st.css';
-import '../css/style.css';
+import React, { useState } from "react";
+import Header from "../components/header";
+import "../css/bootstrap.css";
+import "../css/st.css";
+import "../css/style.css";
 
 export default function Signup() {
   const [hasSignup, setHasSignup] = useState(false);
@@ -45,8 +45,8 @@ export default function Signup() {
               <label for="username">ID 입력 </label>
               <input type="text" id="username" name="username" />
               <button type="button" id="checkUsername">
-                {' '}
-                중복 확인{' '}
+                {" "}
+                중복 확인{" "}
               </button>
               <div className="SS"></div>
               <label for="password">비밀번호 입력</label>
@@ -78,11 +78,6 @@ export default function Signup() {
                 <label>
                   <input type="radio" name="gender" value="female" />
                   여자
-                </label>
-
-                <label>
-                  <input type="radio" name="gender" value="other" />
-                  선택안함
                 </label>
               </form>
 
