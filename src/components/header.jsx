@@ -12,6 +12,9 @@ export default function Header() {
 
       {/* <!-- 상단 바 --> */}
       <Banner />
+
+      {/* <!-- 카테고리 --> */}
+
     </nav>
   );
 }
