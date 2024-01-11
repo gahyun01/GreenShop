@@ -27,7 +27,7 @@ export default function Banner() {
           className="flex justify-end content-start flex-col"
           onclick="window.location.href='Login.html'"
         >
-          <img src={PersonIcon} alt="person" />
+          <img className=" w-10 h-10" src={PersonIcon} alt="person" />
           <strong>로그인</strong>
         </li>
 
@@ -35,7 +35,7 @@ export default function Banner() {
           className="flex justify-end content-start flex-col"
           onclick="window.location.href='Cart.html'"
         >
-          <img src={ShopCartIcon} alt="shopcart" />
+          <img className=" w-10 h-10" src={ShopCartIcon} alt="shopcart" />
           <strong>장바구니</strong>
         </li>
 
@@ -43,7 +43,7 @@ export default function Banner() {
           className="flex justify-end content-start flex-col"
           onclick="window.location.href='Wishlist.html'"
         >
-          <img src={WishlistIcon} alt="wishlist" />
+          <img className=" w-10 h-10" src={WishlistIcon} alt="wishlist" />
           <strong>좋아요</strong>
         </li>
 
@@ -51,7 +51,7 @@ export default function Banner() {
           className="flex justify-end content-start flex-col"
           onclick="window.location.href='AI.html'"
         >
-          <img src="img/ai.png" alt="ai" />
+          <img className=" w-10 h-10" src="img/ai.png" alt="ai" />
           <strong>AI추천</strong>
         </li>
       </ul>
