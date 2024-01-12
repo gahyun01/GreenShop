@@ -43,7 +43,7 @@ export default function Signup() {
             <h2>회원가입</h2>
             <div className="MemSet">
               <label for="username">ID 입력 </label>
-              <input type="text" id="username" name="username" />
+              <input type="tel" id="username" name="username" />
               <button type="button" id="checkUsername">
                 {" "}
                 중복 확인{" "}
@@ -71,12 +71,12 @@ export default function Signup() {
               <label for="password">성별 선택</label>
               <form>
                 <label>
-                  <input type="radio" name="gender" value="male" />
+                  <input type="radio" name="gender" value="MALE" />
                   남자
                 </label>
 
                 <label>
-                  <input type="radio" name="gender" value="female" />
+                  <input type="radio" name="gender" value="FEMALE" />
                   여자
                 </label>
               </form>
