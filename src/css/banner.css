@@ -11,12 +11,9 @@
 .search-box {
   background-color: #fffbe0;
   border: none;
+  outline: none;
   font-size: 14px;
   width: 100%;
-}
-
-.search-box {
-  border: none;
 }
 
 .search-button {

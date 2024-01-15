@@ -39,20 +39,26 @@ export default function Banner({ hasLogin, setHasLogin }) {
           </Link>
         )}
 
-        <li onclick="window.location.href='Cart.html'" style={{ marginLeft: '23px' }}>
-          <div className="pl-1"><img className=" w-10 h-10" src={ShopCartIcon} alt="shopcart" /></div>
-          <strong>장바구니</strong>
-        </li>
+        <Link to="/Cart">
+          <li style={{ marginLeft: '23px' }}>
+            <div className="pl-1"><img className=" w-10 h-10" src={ShopCartIcon} alt="shopcart" /></div>
+            <strong>장바구니</strong>
+          </li>
+        </Link>
 
-        <li onclick="window.location.href='Wishlist.html'" style={{ marginLeft: '23px' }}>
-          <img className=" w-10 h-10" src={WishlistIcon} alt="wishlist" />
-          <strong>좋아요</strong>
-        </li>
+        <Link to="/Wishlist">
+          <li onclick="window.location.href='Wishlist.html'" style={{ marginLeft: '23px' }}>
+            <img className=" w-10 h-10" src={WishlistIcon} alt="wishlist" />
+            <strong>좋아요</strong>
+          </li>
+        </Link>
 
-        <li onclick="window.location.href='AI.html'" style={{ marginLeft: '23px' }}>
-          <img className=" w-10 h-10" src={Ai} alt="ai" />
-          <strong>AI추천</strong>
-        </li >
+        <Link to="/Ai">
+          <li onclick="window.location.href='AI.html'" style={{ marginLeft: '23px' }}>
+            <img className=" w-10 h-10" src={Ai} alt="ai" />
+            <strong>AI추천</strong>
+          </li >
+        </Link>
       </ul >
     </div >
   );
