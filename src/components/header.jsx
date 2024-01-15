@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import MainTitle from "./mainTitle";
 import Banner from "./banner";
+import Category from "./category";
 
 export default function Header() {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export default function Header() {
       <Banner />
 
       {/* <!-- 카테고리 --> */}
-
+      <Category />
     </nav>
   );
 }
