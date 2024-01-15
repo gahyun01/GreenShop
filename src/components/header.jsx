@@ -7,7 +7,7 @@ import Category from "./category";
 export default function Header() {
   const navigate = useNavigate();
   return (
-    <nav className="relative flex flex-wrap items-center justify-between p-0 flex-col w-full">
+    <nav className="flex flex-wrap items-center justify-between p-0 flex-col w-full mt-11">
       {/* <!-- 로고 클릭시 index로 이동 --> */}
       <MainTitle />
 
