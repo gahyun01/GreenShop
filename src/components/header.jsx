@@ -15,7 +15,7 @@ export default function Header() {
       <Banner />
 
       {/* <!-- 카테고리 --> */}
-      {/* <Category /> // 아직 tailwind 다 못넣음 */}
+      <Category />
     </nav>
   );
 }
