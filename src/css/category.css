@@ -3,11 +3,13 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 60px;
   padding: 0;
   border: none;
   background: none;
   cursor: pointer;
+  width: 100%;
 }
 
 #gnb .menu {

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Login from "../pages/Login";
-import { Route, Routes, useNavigate } from "react-router-dom";
+import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import SearchIcon from "../assets/icon/search.svg";
 import PersonIcon from "../assets/icon/person.svg";
 import LPersonIcon from "../assets/icon/lPerson.svg";
@@ -32,10 +31,12 @@ export default function Banner({ hasLogin, setHasLogin }) {
             <strong>마이페이지</strong>
           </li>
         ) : (
-          <li onclick="window.location.href='Login.html'">
-            <img className=" w-10 h-10" src={PersonIcon} alt="person" />
-            <strong>로그인</strong>
-          </li>
+          <Link to="/Login">
+            <li onclick="window.location.href='Login.html'">
+              <img className=" w-10 h-10" src={PersonIcon} alt="person" />
+              <strong>로그인</strong>
+            </li>
+          </Link>
         )}
 
         <li onclick="window.location.href='Cart.html'" style={{ marginLeft: '23px' }}>
