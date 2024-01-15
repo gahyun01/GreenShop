@@ -8,7 +8,7 @@ import WishlistIcon from "../assets/icon/wishlist.svg";
 import Ai from "../assets/icon/ai.svg";
 import '../css/banner.css';
 
-export default function Banner({ hasLogin, setHasLogin }) {
+const Banner = ({ hasLogin, setHasLogin }) => {
   const navigate = useNavigate();
   return (
     <div className="flex items-center pb-5 float-right w-4/5 justify-between">
@@ -63,3 +63,5 @@ export default function Banner({ hasLogin, setHasLogin }) {
     </div >
   );
 }
+
+export default Banner;
