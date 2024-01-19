@@ -26,13 +26,13 @@ const Banner = ({ hasLogin, setHasLogin }) => {
       <ul className="mymenu">
 
         {hasLogin ? (
-          <li onclick="window.location.href='Login.html'">
+          <li style={{ marginLeft: '23px' }}>
             <img className=" w-10 h-10" src={LPersonIcon} alt="lPerson" />
             <strong>마이페이지</strong>
           </li>
         ) : (
           <Link to="/Login">
-            <li onclick="window.location.href='Login.html'">
+            <li style={{ marginLeft: '23px' }}>
               <img className=" w-10 h-10" src={PersonIcon} alt="person" />
               <strong>로그인</strong>
             </li>
@@ -47,14 +47,14 @@ const Banner = ({ hasLogin, setHasLogin }) => {
         </Link>
 
         <Link to="/Wishlist">
-          <li onclick="window.location.href='Wishlist.html'" style={{ marginLeft: '23px' }}>
+          <li style={{ marginLeft: '23px' }}>
             <img className=" w-10 h-10" src={WishlistIcon} alt="wishlist" />
             <strong>좋아요</strong>
           </li>
         </Link>
 
         <Link to="/Ai">
-          <li onclick="window.location.href='AI.html'" style={{ marginLeft: '23px' }}>
+          <li style={{ marginLeft: '23px' }}>
             <img className=" w-10 h-10" src={Ai} alt="ai" />
             <strong>AI추천</strong>
           </li >
