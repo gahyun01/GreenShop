@@ -4,7 +4,7 @@ import '../css/bootstrap.css';
 import '../css/st.css';
 import '../css/style.css';
 
-export default function Login() {
+export default function Login() { // 로그인 페이지
   const [hasLogin, setHasLogin] = useState(false);
   return (
     <div className=" w-screen h-screen flex flex-col justify-center items-center">
