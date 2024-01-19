@@ -10,6 +10,7 @@ export default function App() {
         <Route path='/Cart' element={<Cart />} />
         <Route path='/Wishlist' element={<Wishlist />} />
         <Route path='/Ai' element={<Ai />} />
+        <Route path="/product-registration" element={<ProductRegistration />} />
       </Routes>
     </Router>
   );
