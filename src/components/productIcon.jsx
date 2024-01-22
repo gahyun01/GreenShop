@@ -30,10 +30,13 @@ const ProductIcon = () => {
 
   return (
     <footer className="picon-container">
-      <div className={`picon ${isFixed ? 'fixed-style' : ''}`}>
-        <Link to='/ProductRegistration'>
-          <li onClick={handlePurchaseClick} style={{ marginLeft: '23px', color: 'your-desired-color' }}>
-            <img className="w-12 h-12 ml-3" src={Purchase} alt="purchase" />
+      <div className={`picon ${isFixed ? "fixed-style" : ""}`}>
+        <Link to="/product-registration">
+          <li
+            onClick={handlePurchaseClick}
+            style={{ marginLeft: "23px", color: "your-desired-color" }}
+          >
+            <img className="w-12 h-12 ml-3" src={Register} alt="Register" />
             <strong className="your-tailwind-styles">상품 등록</strong>
           </li>
         </Link>
