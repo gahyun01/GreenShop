@@ -48,10 +48,10 @@ export default function Find() { // 아이디 | 비밀번호 찾기 페이지
                 </div>
                 <div>
                   <label htmlFor="product-name" className="block mb-2 text-sm font-bold text-gray-700">인증번호 :</label>
-                  <input type="text" id="product-name" name="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mustardYellow focus:border-mustardYellow block w-full p-2.5" />
+                  <input type="text" id="product-name" name="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mustardYellow focus:border-mustardYellow block w-full p-2.5 mb-10" />
                 </div>
-                <Link to='/Login'>
-                  <button type="submit" className="text-white bg-TGreen hover:bg-mustardYellow focus:ring-4 focus:outline-none focus:ring-mustardYellow rounded-lg w-full sm:w-auto px-5 py-2.5 text-center font-bold" style={{ color: 'white' }}>로그인</button>
+                <Link to='/Login' className='flex flex-col'>
+                  <button type="submit" className="text-white bg-TGreen hover:bg-mustardYellow focus:ring-4 focus:outline-none focus:ring-mustardYellow rounded-lg sm:w-auto px-5 py-2.5 text-center font-bold w-full" style={{ color: 'white' }}>로그인</button>
                 </Link>
               </form>
             </div >
