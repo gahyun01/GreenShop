@@ -26,10 +26,12 @@ const Banner = ({ hasLogin, setHasLogin }) => {
       <ul className="mymenu">
 
         {hasLogin ? (
-          <li style={{ marginLeft: '23px' }}>
-            <img className=" w-10 h-10" src={LPersonIcon} alt="lPerson" />
-            <strong>마이페이지</strong>
-          </li>
+          <Link to="/MyPage">
+            <li style={{ marginLeft: '23px' }}>
+              <img className=" w-10 h-10" src={LPersonIcon} alt="lPerson" />
+              <strong>마이페이지</strong>
+            </li>
+          </Link>
         ) : (
           <Link to="/Login">
             <li style={{ marginLeft: '23px' }}>
