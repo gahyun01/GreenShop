@@ -3,7 +3,6 @@ import Header from '../components/header';
 import '../css/bootstrap.css';
 import '../css/st.css';
 import '../css/style.css';
-import { Link } from 'react-router-dom';
 
 export default function Login() { // 로그인 페이지
   const [hasLogin, setHasLogin] = useState(false);
@@ -57,12 +56,9 @@ export default function Login() { // 로그인 페이지
           </div>
           <div className="SS"></div>
           <div className="info">
-            <Link to="/SignUp">
-              <a>회원가입</a>
-            </Link>
-            <Link to='/Find'>
-              <a>아이디 | 비밀번호 찾기</a>
-            </Link>
+            <a href="Membership.html">회원가입</a>
+            <a href="FindID.html">아이디찾기</a>
+            <a href="FindPassword.html">비밀번호찾기</a>
           </div>
           <div className="BtnI">
             <button type="button" id="cancelButton">
