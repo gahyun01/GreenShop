@@ -4,7 +4,7 @@ import React from "react";
 const MainTitle = () => {
   const navigate = useNavigate();
   return (
-    <p className="flex justify-center pb-12 w-full pt-12" href="index.html" onClick={() => {
+    <p className="flex justify-center pb-12 w-full" href="index.html" onClick={() => {
       navigate("/");
     }}>
       <Link to="/">

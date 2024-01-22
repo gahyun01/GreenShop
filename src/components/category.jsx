@@ -7,7 +7,7 @@ const Category = () => {
 
   return (
     // 메뉴
-    <nav id="gnb" className="bottom">
+    <nav id="gnb" className="bottom z-20">
       <ul className="menu">
         <li className="top">
           <a href="/shop/list.php?cate=0104">아우터</a>
