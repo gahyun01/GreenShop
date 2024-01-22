@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Purchase from "../assets/icon/purchase.svg";
+import Register from "../assets/icon/register.svg";
 import { Link } from "react-router-dom";
 import "../css/productIcon.css";
 
@@ -36,7 +36,7 @@ const ProductIcon = () => {
             onClick={handlePurchaseClick}
             style={{ marginLeft: "23px", color: "your-desired-color" }}
           >
-            <img className="w-12 h-12 ml-3" src={Purchase} alt="purchase" />
+            <img className="w-12 h-12 ml-3" src={Register} alt="Register" />
             <strong className="your-tailwind-styles">상품 등록</strong>
           </li>
         </Link>
