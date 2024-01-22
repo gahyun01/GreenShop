@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Purchase from "../assets/icon/purchase.svg";
+import Register from "../assets/icon/register.svg";
 import { Link } from "react-router-dom";
-import '../css/productIcon.css';
+import "../css/productIcon.css";
 
 const ProductIcon = () => {
   const navigate = useNavigate();
@@ -20,11 +20,11 @@ const ProductIcon = () => {
     };
 
     // 스크롤 이벤트 리스너 등록
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     // 컴포넌트 언마운트 시 이벤트 리스너 제거
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -42,8 +42,7 @@ const ProductIcon = () => {
         </Link>
       </div>
     </footer>
-
   );
-}
+};
 
 export default ProductIcon;

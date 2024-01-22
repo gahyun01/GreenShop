@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Cart from './pages/Cart';
+import Find from './pages/Find';
+import ProductRegistration from './pages/ProductRegistration';
 
 export default function Router() {
   return (
@@ -11,8 +13,10 @@ export default function Router() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path='/Find' element={<Find />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/product-registration" element={<ProductRegistration />} />
       </Routes>
     </BrowserRouter>
   );
