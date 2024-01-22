@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import Header from '../components/header';
-import '../css/bootstrap.css';
-import '../css/st.css';
-import '../css/style.css';
 import { Link } from 'react-router-dom';
 
 export default function Login() { // 로그인 페이지
