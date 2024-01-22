@@ -11,11 +11,14 @@ export default function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path='/Find' element={<Find />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/SignUp' element={<SignUp />} />
+        <Route path='/FindId' element={<FindId />} />
+        <Route path='/Login' element={<Login />} />
+        <Route path='/myPage' element={<MyPage />} />
+        <Route path='/Cart' element={<Cart />} />
+        <Route path='/Wishlist' element={<Wishlist />} />
+        <Route path='/Ai' element={<Ai />} />
         <Route path="/product-registration" element={<ProductRegistration />} />
       </Routes>
     </BrowserRouter>
