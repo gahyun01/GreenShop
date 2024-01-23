@@ -15,7 +15,6 @@ export default function Signup() { // 회원가입 페이지
           <div className="separator"></div>
           <li
             className="MC"
-            onclick="window.location.href='Wishlist.html'"
             style={{ marginLeft: '23px' }}
           >
             <img src={Check} alt="Check" />
