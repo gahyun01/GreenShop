@@ -11,7 +11,7 @@ export default function Find() { // 아이디 | 비밀번호 찾기 페이지
       {hasFind ? (
         <div className="flex justify-center flex-col items-center w-2/4">
           <div className="container mx-auto mt-28 mb-28 p-5 border border-mustardGray rounded shadow-lg bg-white">
-            <h1 className="text-2xl font-bold mb-5">비밀번호 찾기</h1>
+            <h1 className="text-2xl font-bold mb-5">아이디 찾기</h1>
             <form id="product-form" className="space-y-4 flex flex-col w-4/5 mx-auto mt-8 mb-10">
               <div>
                 <label htmlFor="product-name" className="block mb-2 text-sm font-bold text-gray-700">이름 :</label>

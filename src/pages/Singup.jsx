@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 import Header from "../components/header";
 import "../css/bootstrap.css";
 import "../css/st.css";
 import "../css/style.css";
 import Check from '../assets/icon/check.svg';
 
-export default function Signup() { // 회원가입 페이지
+export default function Sing() {
   const [hasSignup, setHasSignup] = useState(false);
   return (
     <div className=" w-screen h-screen flex flex-col justify-center items-center">
