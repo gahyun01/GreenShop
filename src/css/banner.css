@@ -30,9 +30,10 @@
 /* 로그인, 장바구니, 위시리스트, ai추천 */
 .mymenu {
   margin-right: 50px;
+  position: absolute;
+  right: 50px;
   display: flex;
   list-style: none;
-  justify-content: flex-end;
   gap: 0.5rem;
 }
 

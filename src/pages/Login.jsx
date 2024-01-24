@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import Header from '../components/header';
 import { Link } from 'react-router-dom';
-import Check from '../assets/icon/check.svg';
-
 export default function Login() { // 로그인 페이지
   const [hasLogin, setHasLogin] = useState(false);
   return (
@@ -17,7 +15,23 @@ export default function Login() { // 로그인 페이지
             onclick="window.location.href='Wishlist.html'"
             style={{ marginLeft: '23px' }}
           >
-            <img src={Check} alt="Check" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="200"
+              height="200"
+              viewBox="0 0 24 24"
+            >
+              <g
+                fill="none"
+                stroke="#305440"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+              >
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="m15 10l-4 4l-2-2"></path>
+              </g>
+            </svg>
           </li>
           <strong>로그인 완료</strong>
         </div>
@@ -49,7 +63,7 @@ export default function Login() { // 로그인 페이지
                 <button type="submit" className="text-white bg-TGreen hover:bg-mustardYellow focus:ring-4 focus:outline-none focus:ring-mustardYellow rounded-lg w-full sm:w-auto px-5 py-2.5 text-center font-bold" style={{ color: 'white' }}>로그인</button>
               </form>
               <div className="mt-3 mx-auto flex justify-center gap-96 text-sm mr-4 ml-4">
-                <Link to='/SingUp'>
+                <Link to='/Signup'>
                   <a>회원가입</a>
                 </Link>
                 <Link to='/Find'>
