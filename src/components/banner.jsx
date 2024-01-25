@@ -34,8 +34,8 @@ const Banner = ({ hasLogin, setHasLogin }) => {
           </Link>
         ) : (
           <Link to="/Login">
-            <li style={{ marginLeft: '23px' }}>
-              <img className=" w-10 h-10" src={PersonIcon} alt="person" />
+            <li style={{ marginLeft: '30px' }}>
+              <img className=" w-10 h-10" src={PersonIcon} alt="person" style={{ paddingLeft: '5px' }} />
               <strong>로그인</strong>
             </li>
           </Link>
@@ -43,14 +43,16 @@ const Banner = ({ hasLogin, setHasLogin }) => {
 
         <Link to="/Cart">
           <li style={{ marginLeft: '23px' }}>
-            <div className="pl-1"><img className=" w-10 h-10" src={ShopCartIcon} alt="shopcart" /></div>
+            <div className="pl-1">
+              <img className=" w-10 h-10" src={ShopCartIcon} alt="shopcart" style={{ paddingLeft: '5px' }} />
+            </div>
             <strong>장바구니</strong>
           </li>
         </Link>
 
         <Link to="/Wishlist">
           <li style={{ marginLeft: '23px' }}>
-            <img className=" w-10 h-10" src={WishlistIcon} alt="wishlist" />
+            <img className=" w-10 h-10" src={WishlistIcon} alt="wishlist" style={{ paddingLeft: '3px' }} />
             <strong>좋아요</strong>
           </li>
         </Link>
