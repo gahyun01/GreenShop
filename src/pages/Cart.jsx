@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Header from '../components/header';
 
 export default function Cart() {
   const [cartItems, setCartItems] = useState([]);
@@ -16,20 +17,26 @@ export default function Cart() {
   };
 
   return (
-    <div className="container mx-auto mt-10 p-5 border rounded shadow-lg bg-white">
-      <h2 className="text-2xl font-bold mb-5">장바구니</h2>
-      <ul>
-        {cartItems.map(item => (
-          <li key={item.id} className="flex justify-between items-center mb-3">
-            <img src={item.image} alt={item.name} style={{ width: '50px', height: '50px' }} />
-            <span>{item.name} - {item.price}원 - {item.description}</span>
-            <button onClick={() => handleRemoveItem(item.id)}>삭제</button>
-          </li>
-        ))}
-      </ul>
-      <button className="bg-blue-500 text-white py-2 px-4 rounded" onClick={handleOrder}>
-        주문하기
-      </button>
+    <div className='flex justify-center items-center flex-col'>
+      <Header />
+      <div className="mt-14" style={{ width: '80%', borderBottom: '2px solid #d9ce94' }}> </div>
+
+
+      <div className="container mx-auto mt-10 p-5 border rounded shadow-lg bg-white">
+        <h2 className="text-2xl font-bold mb-5">장바구니</h2>
+        <ul>
+          {cartItems.map(item => (
+            <li key={item.id} className="flex justify-between items-center mb-3">
+              <img src={item.image} alt={item.name} style={{ width: '50px', height: '50px' }} />
+              <span>{item.name} - {item.price}원 - {item.description}</span>
+              <button onClick={() => handleRemoveItem(item.id)}>삭제</button>
+            </li>
+          ))}
+        </ul>
+        <button className="bg-blue-500 text-white py-2 px-4 rounded" onClick={handleOrder}>
+          주문하기
+        </button>
+      </div>
     </div>
   );
 }
