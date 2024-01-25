@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/Login';
-import SingUp from './pages/SingUp';
+import Signup from './pages/Signup';
 import Cart from './pages/Cart';
 import Find from './pages/Find';
 import ProductRegistration from './pages/ProductRegistration';
@@ -18,7 +18,7 @@ export default function Router() {
         <Route path='/' element={<Home />} />
         <Route path='/Find' element={<Find />} />
         <Route path='/Login' element={<Login />} />
-        <Route path='/SingUp' element={<SingUp />} />
+        <Route path='/Signup' element={<Signup />} />
         <Route path='/Cart' element={<Cart />} />
         <Route path='/Ai' element={<Ai />} />
         <Route path='/MyPage' element={<MyPage />} />

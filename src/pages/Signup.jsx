@@ -22,7 +22,7 @@ export default function Sing() {
         </div>
       ) : (
         <>
-          <div className="flex justify-center flex-col items-center w-4/5">
+          <div className="flex justify-center flex-col items-center w-2/4">
             <div className="container mx-auto mt-28 mb-28 p-5 border border-mustardGray rounded shadow-lg bg-white">
               <h1 className="text-2xl font-bold mb-5">회원가입</h1>
               <form id="product-form" className="space-y-4 flex flex-col w-4/5 mx-auto mt-8 mb-10">
