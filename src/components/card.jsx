@@ -1,7 +1,15 @@
 import React from "react";
+import { useState } from "react";
 import TruckdIcon from "../assets/icon/truck.svg";
+import heart from "../assets/icon/heart.svg";
+import eheart from "../assets/icon/eheart.svg";
 
 export default function Card() {
+  const [isClicked, setIsClicked] = useState(false);
+  const handleClick = () => {
+    setIsClicked(!isClicked);
+  };
+
   return (
     // 상품 카드
     <div className="pt-10 pl-12 pr-12">
@@ -10,21 +18,18 @@ export default function Card() {
           <div className="pb-64 block relative w-full h-auto overflow-hidden mb-2 max-w-xs max-h-80 transform -translate-x-1/2 left-1/2 ml-1 p-2">
             <a
               className="text-gray-600 no-underline bg-transparent"
-              href="/shop/view.php?index_no=321416"
+              href="/shop/view.php?index_no=321416" style={{ position: 'relative' }}
+              onClick={(e) => {
+                e.preventDefault();
+              }}
             >
               <img
                 className="w-full h-full object-cover rounded-xl"
                 src="https://img.sonyunara.com/files/goods/321416/1678954898_5.gif.webp"
                 alt="[MADE/기장별,뱃살커버]인생핏 트레이닝 롱일자 밴딩팬츠 숏/기본/롱"
               />
+              <img className="z-10 absolute right-1 bottom-1" src={isClicked ? heart : eheart} alt="change-heart" onClick={handleClick} />
               {/* <!-- 					<img className="list_show_icon" src="https://img.sonyunara.com/2020/icon/best_icon.png" alt=""> --> */}
-            </a>
-            <a
-              href="javascript:"
-              className="good "
-              onclick=" GoodsProc.new_set_wish_single(321416);"
-            >
-              {/* <!-- 				<i className="fa fa-heart"></i> --> */}
             </a>
           </div>
           <div className="mt-5 text-{5px}">
