@@ -1,106 +1,90 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 import Header from "../components/header";
-import "../css/bootstrap.css";
-import "../css/st.css";
-import "../css/style.css";
+import Check from '../assets/icon/check.svg';
 
-export default function Signup() { // 회원가입 페이지
+export default function Sing() {
   const [hasSignup, setHasSignup] = useState(false);
   return (
-    <div className=" w-screen h-screen flex flex-col justify-center items-center">
+    <div className='flex justify-center items-center flex-col'>
       <Header />
+      <div className="mt-14" style={{ width: '80%', borderBottom: '2px solid #d9ce94' }}> </div>
       {hasSignup ? (
         <div className="MCompletion">
           <div className="separator"></div>
           <li
             className="MC"
-            onclick="window.location.href='Wishlist.html'"
-            style="margin-left:23px;"
+            style={{ marginLeft: '23px' }}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="200"
-              height="200"
-              viewBox="0 0 24 24"
-            >
-              <g
-                fill="none"
-                stroke="#305440"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2.5"
-              >
-                <circle cx="12" cy="12" r="9"></circle>
-                <path d="m15 10l-4 4l-2-2"></path>
-              </g>
-            </svg>
+            <img src={Check} alt="Check" />
           </li>
           <strong>회원가입 완료</strong>
         </div>
       ) : (
         <>
-          <div className="Mem">
-            <h2>회원가입</h2>
-            <div className="MemSet">
-              <label for="username">ID 입력 </label>
-              <input type="tel" id="username" name="username" />
-              <button type="button" id="checkUsername">
-                {" "}
-                중복 확인{" "}
-              </button>
-              <div className="SS"></div>
-              <label for="password">비밀번호 입력</label>
-              <input type="password" id="password" name="password" />
-              <div className="MS"></div>
-              <label for="password">비밀번호 확인 </label>
-              <input type="password" id="password" name="password" />
-              <div className="SS"></div>
-              <label for="password">이메일 </label>
-              <input type="password" id="password" name="password" />
-              <div className="MS"></div>
-              <label for="password">이메일 확인 </label>
-              <input type="password" id="password" name="password" />
-              <div className="SS"></div>
-              <label for="password">이름 </label>
-              <input type="password" id="password" name="password" />
-              <div className="MS"></div>
-              <label for="password">생년월일 ( 6자리 ) </label>
-              <input type="password" id="password" name="password" />
+          <div className="flex justify-center flex-col items-center w-2/4">
+            <div className="container mx-auto mt-28 mb-28 p-5 border border-mustardGray rounded shadow-lg bg-white">
+              <h1 className="text-2xl font-bold mb-5">회원가입</h1>
+              <form id="signup-form" className="space-y-4 flex flex-col w-4/5 mx-auto mt-8 mb-10">
+                <div>
+                  <label htmlFor="signup-id" className="block mb-2 text-sm font-bold text-gray-700">ID 입력 :</label>
+                  <input type="text" id="signup-id" name="id" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mustardYellow focus:border-mustardYellow block w-full p-2.5" />
+                </div>
+                <div>
+                  <label htmlFor="signup-pw" className="block mb-2 text-sm font-bold text-gray-700">비밀번호 입력 :</label>
+                  <input type="text" id="signup-pw" name="pw" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mustardYellow focus:border-mustardYellow block w-full p-2.5" />
+                </div>
+                <div>
+                  <label htmlFor="signup-pwcheck" className="block mb-2 text-sm font-bold text-gray-700">비밀번호 확인 :</label>
+                  <input type="text" id="signup-pwcheck" name="pwcheck" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mustardYellow focus:border-mustardYellow block w-full p-2.5" />
+                </div>
+                <div>
+                  <label htmlFor="signup-email" className="block mb-2 text-sm font-bold text-gray-700">이메일 :</label>
+                  <div className='flex'>
+                    <input type="text" id="signup-email" name="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mustardYellow focus:border-mustardYellow block w-full p-2.5" />
+                    <button type="submit" className="text-white bg-TGreen hover:bg-mustardYellow focus:ring-4 focus:outline-none focus:ring-mustardYellow rounded-lg w-full sm:w-auto px-5 py-2.5 text-center font-bold text-sm whitespace-nowrap ml-3" style={{ color: 'white' }}>인증번호 받기</button>
+                  </div>
+                </div>
+                <div>
+                  <label htmlFor="signup-emailcheck" className="block mb-2 text-sm font-bold text-gray-700">인증번호 :</label>
+                  <input type="text" id="signup-emailcheck" name="emailcheck" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mustardYellow focus:border-mustardYellow block w-full p-2.5 mb-10" />
+                </div>
+                <div>
+                  <label htmlFor="signup-name" className="block mb-2 text-sm font-bold text-gray-700">이름 :</label>
+                  <input type="text" id="signup-name" name="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mustardYellow focus:border-mustardYellow block w-full p-2.5" />
+                </div>
+                <div>
+                  <label htmlFor="signup-birth" className="block mb-2 text-sm font-bold text-gray-700">생년월일 ( 6자리 ) :</label>
+                  <input type="text" id="signup-birth" name="birth" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mustardYellow focus:border-mustardYellow block w-full p-2.5" />
+                </div>
+                <label htmlFor="signup-gender" className="block mb-2 text-sm font-bold text-gray-700">성별 :</label>
+                <div className="flex gap-20 p-3">
+                  <label>
+                    <input type="radio" name="gender" value="MALE" />
+                    남자
+                  </label>
 
-              <div className="SS"></div>
-              <label for="password">성별 선택</label>
-              <form>
-                <label>
-                  <input type="radio" name="gender" value="MALE" />
-                  남자
-                </label>
-
-                <label>
-                  <input type="radio" name="gender" value="FEMALE" />
-                  여자
-                </label>
+                  <label>
+                    <input type="radio" name="gender" value="FEMALE" />
+                    여자
+                  </label>
+                </div>
+                <label htmlFor="signup-phon" className="block mb-2 text-sm font-bold text-gray-700">전화번호 :</label>
+                <div className='flex'>
+                  <input type="text" id="signup-phon" name="phon" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mustardYellow focus:border-mustardYellow block w-full p-2.5" />
+                  <button type="submit" className="text-white bg-TGreen hover:bg-mustardYellow focus:ring-4 focus:outline-none focus:ring-mustardYellow rounded-lg w-full sm:w-auto px-5 py-2.5 text-center font-bold text-sm whitespace-nowrap ml-3" style={{ color: 'white' }}>인증번호 받기</button>
+                </div>
+                <div>
+                  <label htmlFor="signup-phoncheck" className="block mb-2 text-sm font-bold text-gray-700">전화번호 확인 :</label>
+                  <input type="text" id="signup-phoncheck" name="phoncheck" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mustardYellow focus:border-mustardYellow block w-full p-2.5 mb-10" />
+                </div>
+                <button type="submit" className="text-white bg-TGreen hover:bg-mustardYellow focus:ring-4 focus:outline-none focus:ring-mustardYellow rounded-lg sm:w-auto px-5 py-2.5 text-center font-bold w-full" style={{ color: 'white' }}>회원가입</button>
               </form>
-
-              <div className="SS"></div>
-              <label for="password">전화번호</label>
-              <input type="password" id="password" name="password" />
-              <div className="MS"></div>
-              <label for="password">전화번호 확인 </label>
-              <input type="password" id="password" name="password" />
-            </div>
-          </div>
-          <div className="SS"></div>
-          <div className="BtnI">
-            <button type="button" id="cancelButton">
-              취소
-            </button>
-            <button type="submit" id="submitButton">
-              회원가입
-            </button>
-          </div>
-          <div className="SS"></div>
+            </div >
+          </div >
         </>
-      )}
-    </div>
+      )
+      }
+    </div >
   );
 }
