@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import Header from '../components/header';
+import Wcard from '../components/wcard';
 
 export default function Wishlist() {
   const [wishlistItems, setWishlistItems] = useState([]);
@@ -8,16 +10,11 @@ export default function Wishlist() {
   }, []);
 
   return (
-    <div className="container mx-auto mt-10 p-5 border rounded shadow-lg bg-white">
-      <h2 className="text-2xl font-bold mb-5">내 위시리스트</h2>
-      <ul>
-        {wishlistItems.map((item, index) => (
-          <li key={index} className="flex justify-between items-center mb-3">
-            <span>{item.name} - {item.price}</span>
-            {/* 상품 페이지 링크 및 위시리스트에서 제거 버튼 추가 예정 */}
-          </li>
-        ))}
-      </ul>
+    <div className='flex justify-center items-center flex-col'>
+      <Header />
+      <div className="mt-14" style={{ width: '80%', borderBottom: '2px solid #d9ce94' }}> </div>
+      <h3 className="tit">좋아요</h3>
+      <Wcard />
     </div>
   );
 }
