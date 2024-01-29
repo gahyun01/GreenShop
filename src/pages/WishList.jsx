@@ -13,7 +13,7 @@ export default function Wishlist() {
     <div className='flex justify-center items-center flex-col'>
       <Header />
       <div className="mt-14" style={{ width: '80%', borderBottom: '2px solid #d9ce94' }}> </div>
-      <h3 className="tit">좋아요</h3>
+      <h3 className=" mt-12 flex">위시리스트</h3>
       <Wcard />
     </div>
   );
