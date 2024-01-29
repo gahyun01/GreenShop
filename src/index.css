@@ -150,3 +150,9 @@ body {
   line-height: 1.5;
   text-align: left;
 }
+
+@font-face {
+  font-family: "dattebayo";
+  font-weight: normal;
+  src: url("../fonts/dattebayo.ttf") format("truetype");
+}
