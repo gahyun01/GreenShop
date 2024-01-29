@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../components/header';
+import Order from './Order';
+import { Link } from 'react-router-dom';
 
 export default function Cart() {
   const [cartItems, setCartItems] = useState([]);
@@ -33,9 +35,11 @@ export default function Cart() {
             </li>
           ))}
         </ul>
-        <button className="bg-blue-500 text-white py-2 px-4 rounded" onClick={handleOrder}>
-          주문하기
-        </button>
+        <Link to="/order">
+          <button className="bg-blue-500 text-white py-2 px-4 rounded">
+            주문하기
+          </button>
+        </Link>
       </div>
     </div>
   );

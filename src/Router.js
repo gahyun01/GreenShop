@@ -9,6 +9,7 @@ import ProductRegistration from './pages/ProductRegistration';
 import Ai from './pages/Ai';
 import MyPage from './pages/MyPage';
 import WishList from './pages/WishList';
+import Order from './pages/Order';
 
 
 export default function Router() {
@@ -21,9 +22,10 @@ export default function Router() {
         <Route path='/Signup' element={<Signup />} />
         <Route path='/Cart' element={<Cart />} />
         <Route path='/Ai' element={<Ai />} />
-        <Route path='/MyPage' element={<MyPage />} />
+        <Route path='/myPage' element={<MyPage />} />
         <Route path='/WishList' element={<WishList />} />
         <Route path="/product-registration" element={<ProductRegistration />} />
+        <Route path="/order" element={<Order />} />
       </Routes>
     </BrowserRouter>
   );
