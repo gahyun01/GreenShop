@@ -24,6 +24,7 @@ export default function Card() {
                 e.preventDefault();
               }}
             >
+              <input type="checkbox" className="z-10 absolute left-1 top-1" id="Ckbox" />
               {/* <Checkbox
                 checked={true}
                 style={{ backgroundColor: '#f2f2f2', color: '#900', borderRadius: 5 }}
