@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from '../components/header';
 import Order from './Order';
 import { Link } from 'react-router-dom';
+import shoppingCart from '../img/shopping-cart.png';
 
 export default function Cart() {
   const [cartItems, setCartItems] = useState([]);
@@ -22,8 +23,7 @@ export default function Cart() {
     <div className='flex justify-center items-center flex-col'>
       <Header />
       <div className="mt-14" style={{ width: '80%', borderBottom: '2px solid #d9ce94' }}> </div>
-
-
+      <img src={shoppingCart} alt="shoppingCart" className="mt-12" />
       <div className="container mx-auto mt-10 p-5 border rounded shadow-lg bg-white">
         <h2 className="text-2xl font-bold mb-5">장바구니</h2>
         <ul>

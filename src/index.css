@@ -137,6 +137,7 @@ table {
 
 @font-face {
   font-family: 'dattebayo';
+  font-weight: normal;
   src: url('./fonts/dattebayo.ttf') format('truetype');
 }
 
@@ -149,10 +150,4 @@ body {
   font-weight: 400;
   line-height: 1.5;
   text-align: left;
-}
-
-@font-face {
-  font-family: "dattebayo";
-  font-weight: normal;
-  src: url("../fonts/dattebayo.ttf") format("truetype");
 }

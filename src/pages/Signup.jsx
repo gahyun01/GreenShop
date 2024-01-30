@@ -32,11 +32,11 @@ export default function Sing() {
                 </div>
                 <div>
                   <label htmlFor="signup-pw" className="block mb-2 text-sm font-bold text-gray-700">비밀번호 입력 :</label>
-                  <input type="text" id="signup-pw" name="pw" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mustardYellow focus:border-mustardYellow block w-full p-2.5" />
+                  <input type="password" id="signup-pw" name="pw" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mustardYellow focus:border-mustardYellow block w-full p-2.5" />
                 </div>
                 <div>
                   <label htmlFor="signup-pwcheck" className="block mb-2 text-sm font-bold text-gray-700">비밀번호 확인 :</label>
-                  <input type="text" id="signup-pwcheck" name="pwcheck" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mustardYellow focus:border-mustardYellow block w-full p-2.5" />
+                  <input type="password" id="signup-pwcheck" name="pwcheck" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mustardYellow focus:border-mustardYellow block w-full p-2.5" />
                 </div>
                 <div>
                   <label htmlFor="signup-email" className="block mb-2 text-sm font-bold text-gray-700">이메일 :</label>
@@ -72,7 +72,7 @@ export default function Sing() {
                 <label htmlFor="signup-phon" className="block mb-2 text-sm font-bold text-gray-700">전화번호 :</label>
                 <div className='flex'>
                   <input type="text" id="signup-phon" name="phon" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mustardYellow focus:border-mustardYellow block w-full p-2.5" />
-                  <button type="submit" className="text-white bg-TGreen hover:bg-mustardYellow focus:ring-4 focus:outline-none focus:ring-mustardYellow rounded-lg w-full sm:w-auto px-5 py-2.5 text-center font-bold text-sm whitespace-nowrap ml-3" style={{ color: 'white' }}>인증번호 받기</button>
+                  <button type="submit" className="text-white bg-TGreen hover:bg-mustardYellow text-black focus:ring-4 focus:outline-none focus:ring-mustardYellow rounded-lg w-full sm:w-auto px-5 py-2.5 text-center font-bold text-sm whitespace-nowrap ml-3" style={{ color: 'white' }}>인증번호 받기</button>
                 </div>
                 <div>
                   <label htmlFor="signup-phoncheck" className="block mb-2 text-sm font-bold text-gray-700">전화번호 확인 :</label>
